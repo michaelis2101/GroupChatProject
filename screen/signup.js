@@ -37,7 +37,7 @@ const SignUp = ({navigation}) =>{
                     email: email,
                 }).then(()=>{
                     navigation.navigate('LoginScreen')
-                    ToastAndroid.show('Account Created, Please Login', ToastAndroid.SHORT);
+                    ToastAndroid.show('Account Created, Please Login', ToastAndroid.LONG);
                 })
             })
 
