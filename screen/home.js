@@ -130,11 +130,11 @@ const HomeScreen = ({navigation}) => {
                 </TouchableOpacity>
             </View>
             
-            <TouchableOpacity 
+            {/* <TouchableOpacity 
                 onPress={logoutHandler}
                 style={styles.logoutbtn}>
                     <Text style={{color:'#f9f9f9'}}>logout</Text>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
 
         </View>
     )
