@@ -80,7 +80,7 @@ const ChatScreen = ({navigation}) => {
       const storageRef = storage().ref(`attachments/${fileName}.${fileExtension}`);
 
       try {
-        // Upload the file to Firebase Storage
+        // Upload the file ke Firebase Storage
         const response = await fetch(fileUri);
         const blob = await response.blob();
         await storageRef.put(blob);
@@ -168,6 +168,7 @@ const handleDownloadAttachment = async (attachmentUrl, attachmentName) => {
       await FileViewer.open(fileDest);
     } else {
       console.log('Storage permission denied');
+      ToastAndroid.show('Storage permission denied', ToastAndroid.SHORT);
     }
   } catch (error) {
     console.log('Error downloading attachment:', error);

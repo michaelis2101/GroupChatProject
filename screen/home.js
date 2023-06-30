@@ -15,7 +15,7 @@ const HomeScreen = ({navigation}) => {
     
 
      const [Room,setRoom] = useState([])
-     const [refreshing, setRefreshing] = useState(false);
+     //const [refreshing, setRefreshing] = useState(false);
 
      console.log(idUser)
 
